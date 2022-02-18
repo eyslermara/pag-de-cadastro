@@ -4,11 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".styles.css"
-    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/495cf25e4e.js" crossorigin="anonymous"></script>
+
     <title>pág de login</title>
 </head>
 <body>
-    <script src="./app.js"></script>
+    <div class="container">
+     <div class="wrapper">
+         <form action="#" class="form-container">
+            <h1>Bem vinda(o)</h1>
+
+             <section class="input-area">
+                 <div class="input-form">
+                    <i class="fa-solid fa-user"></i>
+                  <input type="email" name="email" id="email">
+                 </div>
+
+                 <div class="input-form">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" id="password">
+                 </div>
+                   
+                 
+             </section>
+             <div class="divider"></div>
+
+             <section class="validator-area">
+                 <ul>
+                     <li class="active">
+                        <span>
+                            <i class="fa-solid fa-circle-notch"></i>
+                         </span>
+                         Letras maiúsculas e minúsculas</li>
+                     <li>
+                        <span>
+                            <i class="fa-solid fa-circle-notch"></i>
+                         </span>
+                         Número (0-9)</li>
+                     <li>
+                        <span>
+                            <i class="fa-solid fa-circle-notch"></i>
+                         </span>
+                         Caractere especial</li>
+                     <li>
+                        <span>
+                            <i class="fa-solid fa-circle-notch"></i>
+                         </span>No mínimo 8 dígitos</li>
+                     </li>
+                 </ul>
+             </section>
+             <input type="submit" value="Criar Conta" class="botao" disabled>
+         </form>
+
+       </div>
+    </div>
+        <script src="./app.js"></script>
 </body>
 </html>
