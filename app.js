@@ -75,4 +75,14 @@ sign_in_password.addEventListener('keyup', (event) => {
         icon.classList.add('fa-circle');
     }
 
-} )
+    if(
+        isNumeroValidated &&
+        isPasswordLength &&
+        isCaractereEspecialValidated &&
+        isLetrasValidated) {
+            submitButton.removeAttribute('disabled')
+        } else {
+            submitButton.setAttribute('disabled');
+        }
+
+});
