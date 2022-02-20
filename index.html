@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/495cf25e4e.js" crossorigin="anonymous"></script>
-
+    
     <title>pág de login</title>
 </head>
 <body>
@@ -26,37 +26,42 @@
                  <div class="input-form">
                     <i class="fa-solid fa-lock"></i>
                     <input type="password" name="password" id="password">
+
                  </div>
-                   
-                 
              </section>
              <div class="divider"></div>
-
              <section class="validator-area">
                  <ul>
-                     <li class="active">
+                     <div id="senha">
+                     <li  id="letras">
                         <span>
-                            <i class="fa-solid fa-circle-notch"></i>
+                            <i class="fas fa-circle"></i>
                          </span>
-                         Letras maiúsculas e minúsculas</li>
-                     <li>
+                         Letras maiúsculas e minúsculas
+                        </li>
+                     <li id="numero">
                         <span>
-                            <i class="fa-solid fa-circle-notch"></i>
+                            <i class="fa-solid fa-circle"></i>
                          </span>
-                         Número (0-9)</li>
-                     <li>
+                         Número (0-9)
+                        </li>
+                     <li id="caractere-especial">
                         <span>
-                            <i class="fa-solid fa-circle-notch"></i>
+                            <i class="fa-solid fa-circle"></i>
                          </span>
-                         Caractere especial</li>
-                     <li>
+                         Caractere especial
+                        </li>
+                     <li id="digitos">
                         <span>
-                            <i class="fa-solid fa-circle-notch"></i>
-                         </span>No mínimo 8 dígitos</li>
+                            <i class="fa-solid fa-circle"></i>
+                         </span>
+                         No mínimo 8 dígitos
+                        </li>
+                    </div>
                      </li>
                  </ul>
              </section>
-             <input type="submit" value="Criar Conta" class="botao" disabled>
+             <input type="submit" value="Criar Conta" class="botao" id="criar-conta" disabled>
          </form>
 
        </div>
